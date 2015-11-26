@@ -15,6 +15,15 @@ body {
 footer {
   padding: 30px 0;
 }
+.row-offcanvas{
+    padding:0;
+}
+h1,h2,h3,h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin:0;
+    padding:0;
+}
 
 /*header*/
 header{
@@ -42,7 +51,7 @@ header .log-out-button{
 	border:0px;
 	border-radius: 0px;
 	box-shadow: none;
-	padding:25px 0 15px 0;
+	padding:25px 0 16px 0;
 	margin:0 auto;
 }
 .log-out-button img{
@@ -64,13 +73,48 @@ header .log-out-button{
 }
 
 /*sidebar*/
+#sidebar{
+    border-right:5px solid #f8f9fb;
+    min-height: 700px;
+    background: #fff;
+    border-radius: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none;  
+}
+#sidebar:before{
+    border-right: 1px solid #e4e8eb;
+    border-radius: 0px;
+    bottom: 0px;
+    content: "";
+    left: 0px;
+    position: absolute;
+    right: -5px;
+    top: 0px;
+}
+#sidebar:after{
+    border-right: 1px solid #e4e8eb;
+    border-radius: 0px;
+    bottom: 0px;
+    content: "";
+    left: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
 .list-group{
 	border-radius:0px;
+    box-shadow: none;
+    border-left:0px;
+    padding-right: 1px;
+    position: relative;
+    z-index: 2;
 }
 .list-group-item.active, 
 .list-group-item.active:hover, 
 .list-group-item.active:focus{
-    border:1px solid #f4f4f4;
+    border-right:1px solid #f4f4f4;
     background:#fff;
     color: #67696e;
     text-shadow: none;
@@ -78,15 +122,18 @@ header .log-out-button{
 .list-group a.active, 
 .list-group a.active:hover, 
 .list-group a.active:focus{
-	border:1px solid #ddd;
-	border-right:1px solid #f4f4f4;
+    border-left: 0px;
+    border-bottom:1px solid #ddd;
+    border-right:0px solid #ddd;
+    border-top:1px solid #ddd;
 	font-family: "Open Sans",sans-serif;
 }
 .list-group-item.active i{
 	color: #39ade4;
 }
 .list-group-item{
-	}
+
+}
 .list-group-item i{
 	padding:0 15px 0 15px;
 }
@@ -94,22 +141,43 @@ header .log-out-button{
 	border-radius:0px;
 	border-bottom:1px solid #f4f4f4;
 	border-right:1px solid #f4f4f4;
+    border-left:0px;
 	font-family: "Open Sans",sans-serif;
 }
 .list-group-item:first-child,
 .list-group-item:last-child{
 	border-radius:0px;
 }
+.list-group a:first-child{
+    border-top:0px;
+    margin-top:15px;
+}
 
+/*main-content*/
+.main-content{
+    padding-top:15px;
+}
+
+/*dashboard*/
+.dashboard-quicklinks{
+    clear: both;
+}
+.dashboard-quicklinks a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
 
 /*misc*/
 .no-padding{
 	padding: 0;
 }
-
-.row-offcanvas{
-	padding:15px 0;
+.no-padding-right{
+    padding-right:0;
 }
+.no-padding-left{
+    padding-left:0;
+}
+
 /*
  * Off Canvas
  * --------------------------------------------------
