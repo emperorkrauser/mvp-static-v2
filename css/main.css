@@ -38,6 +38,7 @@ header .live-preview-button{
 	background-image: none;
 	border:1px solid #e4e8eb;
 	font-size: 16px;
+    border-radius:2px;
 }
 header .live-preview-button i{
 	padding-right: 5px;
@@ -53,6 +54,7 @@ header .log-out-button{
 	box-shadow: none;
 	padding:25px 0 16px 0;
 	margin:0 auto;
+    color: #666666;
 }
 .log-out-button img{
 	border-radius:50%;
@@ -125,9 +127,12 @@ header .log-out-button{
     border-left: 0px;
     border-bottom:1px solid #ddd;
     border-right:0px solid #ddd;
-    border-top:1px solid #ddd;
+    border-top:0px solid #ddd;
 	font-family: "Open Sans",sans-serif;
 }
+.list-group a:hover > i{
+    color: #39ade4;
+} 
 .list-group-item.active i{
 	color: #39ade4;
 }
@@ -142,6 +147,7 @@ header .log-out-button{
 	border-bottom:1px solid #f4f4f4;
 	border-right:1px solid #f4f4f4;
     border-left:0px;
+    color: #9fa4af;
 	font-family: "Open Sans",sans-serif;
 }
 .list-group-item:first-child,
@@ -157,6 +163,12 @@ header .log-out-button{
 .main-content{
     padding-top:15px;
 }
+.tab-title{
+    color: #67696e;
+}
+.tab-description{
+    color: #9fa4af;
+}
 
 /*dashboard*/
 .dashboard-quicklinks{
@@ -165,6 +177,30 @@ header .log-out-button{
 .dashboard-quicklinks a{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: #39ade4;s
+}
+.chat-icon{
+  height: 100px;
+  width: 100%;
+  border-left: 3px solid #e4e8eb;
+  border-right:3px solid #e4e8eb;
+  border-top:3px solid #e4e8eb;
+  border-bottom: 3px solid #e4e8eb;
+  margin:0 auto;
+}
+.chat-icon .value{
+    color: #a7b3bc;
+    font-size: 30px;
+    margin: 11% 0;
+    text-align: center;
+}
+.tri-down{
+    border-top:5px solid #fff;
+    background: #fff;
+    margin-top:-10px;
+    position: relative;
+    z-index: 1;
+    background: :#fff;
 }
 
 /*misc*/
