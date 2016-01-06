@@ -60,8 +60,8 @@
         <div class="row row-offcanvas row-offcanvas-left">
             <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas no-padding-right">
                 <div class="list-group">
-                    <a class="list-group-item active" href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a>
-                    <a class="list-group-item" href="choose-template.html"><i class="icon-beaker"></i> Choose Template</a>
+                    <a class="list-group-item" href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a>
+                    <a class="list-group-item active" href="choose-template.html"><i class="icon-beaker"></i> Choose Template</a>
                     <a class="list-group-item" href="#"><i class="fa fa-home"></i> Property Info</a>
                     <a class="list-group-item" href="#"><i class="fa fa-picture-o"></i> Photos</a>
                     <a class="list-group-item" href="#"><i class="fa fa-play"></i> Video</a>
@@ -76,38 +76,58 @@
                 <p class="pull-left visible-xs">
                     <button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">Toggle nav</button>
                 </p>
-                <h1 class="tab-title">DASHBOARD</h1>
+                <h1 class="tab-title">CHOOSE TEMPLATE</h1>
                 <h3 class="tab-description">Lorem ipsum</h3>
-                
-                <div id="myfirstchart" style="height: 250px;"></div>
+            
                 <p class="clearfix"></p>
                 <br>
-                <div class="dashboard-quicklinks">
-                    <div class="col-md-4">
-                        <div class="chat-icon">
-                            <h4 class="value">1650</h4>
-                        </div>
-                        <p class="text-center"><img src="img/tri-down.png" alt="" class="tri-down"></p>
 
-                        <p class="text-center"><img src="img/chart.png" alt=""></p>
-                        <p class="text-center"><a href="">SALES</a></p>
-                    </div>
+                <div class="themes">
                     <div class="col-md-4">
-                        <div class="chat-icon">
-                            <h4 class="value">1650</h4>
+                        <div class="theme-item">
+                            <div class="theme-screenshot">
+                                <img src="" alt="">
+                            </div>
+                            <div class="theme-description">
+                                <p>Active: Lighty</p>
+                            </div>
                         </div>
-                        <p class="text-center"><img src="img/tri-down.png" alt="" class="tri-down"></p>
-                        <p class="text-center"><img src="img/new-property.png" alt=""></p>
-                        <p class="text-center"><a href="">NEW PROPERTY</a></p>
                     </div>
+
                     <div class="col-md-4">
-                        <div class="chat-icon">
-                            <h4 class="value">1650</h4>
+                        <div class="theme-item">
+                            <div class="theme-screenshot">
+                                <img src="" alt="">
+                            </div>
+                            <div class="theme-description">
+                                <p>Darkly</p>
+                                <button class="btn btn-default template-button">
+                                    Activate
+                                </button>
+                                <button class="btn btn-default template-button">
+                                    Live Preview
+                                </button>
+                            </div>
                         </div>
-                        <p class="text-center"><img src="img/tri-down.png" alt="" class="tri-down"></p>
-                        <p class="text-center"><img src="img/reports.png" alt=""></p>
-                        <p class="text-center"><a href="">REPORTS</a></p>
-                    </div>  
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="theme-item">
+                            <div class="theme-screenshot">
+                                <img src="" alt="">
+                            </div>
+                            <div class="theme-description">
+                                <p>Winter</p>
+                                <button class="btn btn-default template-button">
+                                    Activate
+                                </button>
+                                <button class="btn btn-default template-button">
+                                    Live Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -122,31 +142,6 @@
     <script src="js/main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            new Morris.Area({
-              // ID of the element in which to draw the chart.
-              element: 'myfirstchart',
-              // Chart data records -- each entry in this array corresponds to a point on
-              // the chart.
-              data: [
-                { year: '2008', valueA: 20, valueB: 0 },
-                { year: '2009', valueA: 10, valueB: 25 },
-                { year: '2010', valueA: 5 , valueB: 25 },
-                { year: '2011', valueA: 5 , valueB: 50},
-                { year: '2012', valueA: 20, valueB: 100 }
-
-              ],
-              // The name of the data record attribute that contains x-values.
-              xkey: 'year',
-              // A list of names of data record attributes that contain y-values.
-              ykeys: ['valueA','valueB'],
-              // Labels for the ykeys -- will be displayed when you hover over the
-              // chart.
-              labels: ['Value A','Value B']
-            });
-        });
-    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         $('[data-toggle="offcanvas"]').click(function () {
